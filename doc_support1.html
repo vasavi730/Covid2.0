@@ -203,10 +203,6 @@ body {
   transition: all 1s ease;
   width: 15rem;
 }
-
-/* Flip card - covering both the front and inside front page */
-
-/* An outer container to hold the flip card. This excludes the inside page */
 .flip-card {
   height: 15rem;
   perspective: 100rem;
@@ -217,14 +213,9 @@ body {
   width: 15rem;
   z-index: 100;
 }
-
-/* The outer container's visibility is set to hidden. This is to make everything within the container NOT set to hidden  */
-/* This is done so content in the inside page can be selected */
 .flip-card > * {
   visibility: visible;
 }
-
-/* An inner container to hold the flip card. This excludes the inside page */
 .flip-card__container {
   height: 100%;
   position: absolute;
